@@ -10,19 +10,15 @@
   <img src="../../assets/imgs/person.png" width="200px">
   <ion-list>
       <ion-item>
-        <ion-label>Welcome to my first app</ion-label>
-      </ion-item>
-
-      <ion-item>
         <ion-label floating>Username</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" [(ngModel)]="id"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label floating>Password</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input type="password"  [(ngModel)]="pass"></ion-input>
       </ion-item>
     </ion-list>
     <button ion-button block (click)="next()">LOGIN</button>
-    <ion-label class="color-red">forget your password</ion-label>
+    <ion-label class="color-red">Forget password ?</ion-label>
 </ion-content>
