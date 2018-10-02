@@ -9,8 +9,9 @@
   <ion-navbar>
     <ion-title>detail</ion-title>
     <ion-buttons right >
-      <button ion-button icon-only outline color="dark" >
-        <ion-icon name="md-camera" large></ion-icon>
+      <button (click)="connCamera()" ion-button icon-only outline color="dark">
+          <img src="../../assets/imgs/camera.png" width="50px" height="50px">
+        <!-- <ion-icon name="md-camera" large></ion-icon> -->
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -19,7 +20,12 @@
 
 
 <ion-content padding>
-  <ion-img [src]="a">
+  <ion-item>
+      <ion-label floating>Your Text</ion-label>
+     <ion-input type="text" value="" [(ngModel)]="text"></ion-input>
+  </ion-item>
+  <button ion-button block (click)="connSpeech()" >SAY TEXT</button>
+  <ion-img [src]="a" width="100%" height="100%">
 
   </ion-img>
 </ion-content>

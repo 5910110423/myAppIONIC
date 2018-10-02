@@ -13,10 +13,11 @@ export class HomePage {
 
   }
   next(){
-    if(this.id == "admin" && this.pass == "1234"){
+    this.navCtrl.push(DetailPage)
+    /*if(this.id == "admin" && this.pass == "1234"){
       this.navCtrl.push(DetailPage)
     }else{
       alert("Username and Password ERROR !!!");
-    }
+    }*/
   }
 }
